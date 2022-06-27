@@ -15,7 +15,7 @@ CREATE TABLE tb_personagem(
     id BIGINT auto_increment,
     nome VARCHAR(255),
     regiao VARCHAR(255),
-	arvoreHabilidades VARCHAR(255),
+	arvoreHabilidades VARCHAR(255), -- SELECT * FROM tb_personagem INNER JOIN tb_classes ON tb_classes.id = tb_personagem.char_id;
     ATK BIGINT,
     DEF BIGINT,
     char_id BIGINT,    

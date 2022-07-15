@@ -12,7 +12,6 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
-//import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -27,10 +26,6 @@ import com.generation.blogpessoal.service.UsuarioService;
 @CrossOrigin(origins = "*", allowedHeaders = "*")
 public class UsuarioController {
 
-	/**
-	 * Faz uma injeção de dependência da classe de Serviço UsuarioService
-	 * para ter acesso aos métodos do CRUD com regras de negócio
-	 */
 	@Autowired
 	private UsuarioService usuarioService;
 

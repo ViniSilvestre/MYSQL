@@ -12,7 +12,6 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
-@SuppressWarnings("Deprecation")
 @EnableWebSecurity
 public class BasicSecurityConfig extends WebSecurityConfigurerAdapter {
 
@@ -24,10 +23,8 @@ public class BasicSecurityConfig extends WebSecurityConfigurerAdapter {
 	@Override
 	protected void configure(AuthenticationManagerBuilder auth) throws Exception {
 		
-		//video
 		 auth.userDetailsService(userDetailsService);
 
-		 // usuario em memoria-novo
 		 auth.inMemoryAuthentication()
 			.withUser("root")
 			.password(passwordEncoder().encode("root"))
